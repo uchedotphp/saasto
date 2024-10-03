@@ -1,0 +1,60 @@
+@use "./reset"; //modules
+@use "./variables";
+
+body {
+  background-color: map-get(variables.$bg-colors, "orange");
+  color: map-get(variables.$font-colors, "deep-black");
+  font-size: 1rem;
+  height: 100%;
+  font-family: variables.$poppins-font;
+  padding-top: 56px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .logo {
+    margin-right: 211.43px;
+  }
+
+  .navigation {
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 48px;
+
+      li {
+        font-weight: 400px;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+
+.nav-right {
+  margin-left: 141px;
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  a {
+    text-decoration: none;
+    color: map-get(variables.$font-colors, "red");
+    text-transform: capitalize;
+  }
+
+  button {
+    border-radius: 34px;
+    padding: 16px 32px;
+    color: map-get(variables.$font-colors, "white");
+    background-color: map-get(variables.$font-colors, "red");
+    outline: none;
+    border: none;
+    font-weight: 600;
+  }
+}
+
+main {
+  h1 {
+  }
+}

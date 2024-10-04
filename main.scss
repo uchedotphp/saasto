@@ -5,9 +5,10 @@ body {
   background-color: map-get(variables.$bg-colors, "orange");
   color: map-get(variables.$font-colors, "deep-black");
   font-size: 1rem;
+  line-height: 1;
   height: 100%;
   font-family: variables.$poppins-font;
-  padding-top: 56px;
+  padding-top: 40px;
 }
 
 header {
@@ -25,8 +26,9 @@ header {
       gap: 48px;
 
       li {
-        font-weight: 400px;
+        font-weight: 400;
         text-transform: capitalize;
+        line-height: 24px;
       }
     }
   }
